@@ -1,0 +1,7 @@
+version: "3"
+
+services:
+  app:
+    image: yourdockerhub/dev:latest
+    ports:
+      - "80:80"
