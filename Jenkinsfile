@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     environment {
-        DEV_IMAGE = "wahid581/dev:latest"
-        PROD_IMAGE = "wahid581/prod:latest"
+        DEV_IMAGE = "wahid581doc/wahid581-dev:latest"
+        PROD_IMAGE = "wahid581doc/wahid581-prod:latest"
     }
 
     stages {
@@ -38,7 +38,7 @@ pipeline {
 
         stage('Push PROD') {
             when {
-                branch 'master'
+                branch 'main'
             }
 
             steps {
